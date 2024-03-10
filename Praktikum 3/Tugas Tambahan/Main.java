@@ -37,7 +37,7 @@ public class Main {
                 menu = menu2;   
             } else {
                 // TO DO 5: Tampilkan pesan bahwa menu tidak valid dan menghentikan eksekusi program   
-                throw new MenuTidakTersediaException("Menu tidak valid!");
+                System.out.println("Menu tidak valid!");
             }
             
             // TO DO 6: Periksa apakah menu yang dipilih tidak null, jika null, seharusnya menimbulkan (throw) MenuTidakTersediaException
