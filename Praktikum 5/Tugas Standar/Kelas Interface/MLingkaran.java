@@ -5,9 +5,15 @@
  * Deskripsi    : Implementasi cara menghitung luas lingkaran
  */
 
-public class MLingkaran {
+import java.util.Scanner;
+
+class MLingkaran {
     public static void main(String[] args) {
-        Lingkaran l = new Lingkaran(10.2);
-        System.out.println("Luas lingkaran dengan "+"jejari 10.2 satuan adalah "+l.hitungLuas());
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Masukkan jejari lingkaran : ");
+        Lingkaran L = new Lingkaran(scan.nextDouble());
+        System.out.println("Luas lingkaran adalah : " + L.hitungLuas());
+        // Lingkaran l = new Lingkaran(10.2);
+        // System.out.println("Luas lingkaran dengan "+"jejari 10.2 satuan adalah "+l.hitungLuas());
     }
 }
